@@ -12,14 +12,14 @@ for novel in qidian.novels():
 ...
 
 #List chapters summary info (return generator)
-for chp in qidian.charpters_list('6831850602000905'):
+for chap in qidian.charpters_list('6831850602000905'):
     print(chap)
 ...
 {'chapterId': '18339109613388345', 'chapterName': 'Swindler ', 'chapterIndex': 1}
 ...
 
 #Get full charpter content, with the translation content
-full_chapter = chapter('6831850602000905', '19654531444951530')
+full_chapter = qidian.chapter('6831850602000905', '19654531444951530')
 {
   'chapterId': '19654531444951530',
   'chapterName': 'Death Aura',
