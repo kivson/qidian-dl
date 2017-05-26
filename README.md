@@ -1,7 +1,7 @@
 # qidian-dl
 Library for downloading information and chapters of qidian internations novels
 
-~~~~{.python}
+```python
 import qidian
 
 #List all novels (return generator)
@@ -10,7 +10,6 @@ for novel in qidian.novels():
 ...
 {'bookId': 6831850602000905, 'bookName': "Library of Heaven's Path", 'categoryId': 20001, 'categoryName': 'Xuanhuan', 'totalScore': '4.2', 'description': 'Zhang Xuan...'}
 ...
-
 
 #List chapters summary info (return generator)
 for chp in qidian.charpters_list('6831850602000905'):
@@ -47,5 +46,4 @@ full_chapter = chapter('6831850602000905', '19654531444951530')
 
 # Return full charpter content of all chapters from one novel
 qidian.all_chapters('6831850602000905', poolsize=10)
-
-~~~~
+```
